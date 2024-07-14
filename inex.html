@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Order Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="background">
+        <form id="changeOrderForm">
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date">
+
+            <label for="project">Project:</label>
+            <select id="project" name="project">
+                <option value="A">Project A</option>
+                <option value="B">Project B</option>
+                <option value="C">Project C</option>
+            </select>
+
+            <label for="note">Note:</label>
+            <textarea id="note" name="note"></textarea>
+
+            <label>Cost Type:</label>
+            <div class="radio-div">
+                <label for="flatFee">Flat Fee</label>
+                <input type="radio" class="neumorphism" id="flatFee" name="costType" value="flatFee">
+                <label for="lineItem">Line Item</label>
+                <input type="radio" class="neumorphism" id="lineItem" name="costType" value="lineItem">
+            </div>
+        </form>
+    </div>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 class="modal-title"></h2>
+            <div id="modalContent">
+            </div>
+            <button class="neumorphism" id="submitButton">Submit</button>
+        </div>
+    </div>
+
+    <div id="customAlertModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="alertMessage"></div>
+            <button id="okButton" class="neumorphism">OK</button>
+        </div>
+    </div>
+    
+
+    <script src="scripts.js"></script>
+</body>
+</html>

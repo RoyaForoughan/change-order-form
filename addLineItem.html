@@ -1,0 +1,31 @@
+
+<div class="line-item">
+    <label for="quantityLineItem">Quantity:</label>
+    <input type="number" class="quantity" name="quantityLineItem">
+    <span class="error-message"></span>
+
+    <label for="unitCostLineItem">Unit Cost:</label>
+    <input type="number" class="unit-cost" name="unitCostLineItem">
+    <span class="error-message"></span>
+
+    <label for="builderCostLineItem">Builder Cost:</label>
+    <input type="number" class="builder-cost" name="builderCostLineItem" readonly>
+
+    <label for="implementationCostTypeLineItem">Implementation Cost Type:</label>
+    <select class="implementation-cost-type" name="implementationCostTypeLineItem">
+        <option value="%">%</option>
+        <option value="$">$</option>
+    </select>
+    <span class="error-message"></span>
+
+    <label for="implementationCostLineItem">Implementation Cost:</label>
+    <input type="number" class="implementation-cost" name="implementationCostLineItem">
+    <span class="error-message"></span>
+
+    <label for="clientCostLineItem">Client Cost:</label>
+    <input type="number" class="client-cost" name="clientCostLineItem" readonly>
+
+    <button class="removeLineItemButton">Remove</button>
+</div>
+
+
